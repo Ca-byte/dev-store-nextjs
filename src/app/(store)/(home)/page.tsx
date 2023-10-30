@@ -1,5 +1,5 @@
 export default async function Home() {
   await new Promise((resolve) => setTimeout(resolve, 2000))
 
-  return <h1>Hello Peach 2!</h1>
+  return <h1>Hello Peach</h1>
 }
