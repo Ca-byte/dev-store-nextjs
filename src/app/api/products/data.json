@@ -3,45 +3,45 @@
 		{
 			"id": 1,
 			"title": "Never Stop Learning Hoodie",
-			"slug": "never-stop-learning-hoodie",
+			"slug": "moletom-never-stop-learning",
 			"price": 129,
-			"image": "/never-stop-learning-hoodie.png",
+			"image": "/moletom-never-stop-learning.png",
 			"description": "Hoodie made with 88% cotton and 12% polyester.",
 			"featured": true
 		},
 		{
 			"id": 2,
 			"title": "AI Side Hoodie",
-			"slug": "ai-side-hoodie",
+			"slug": "moletom-ai-side",
 			"price": 99,
-			"image": "/ai-side-hoodie.png",
+			"image": "/moletom-ai-side.png",
 			"description": "Hoodie made with 88% cotton and 12% polyester.",
 			"featured": true
 		},
 		{
 			"id": 3,
 			"title": "DoWhile 2022 T-shirt",
-			"slug": "dowhile-2022-tshirt",
+			"slug": "camiseta-dowhile-2022",
 			"price": 69,
-			"image": "/dowhile-2022-tshirt.png",
+			"image": "/camiseta-dowhile-2022.png",
 			"description": "T-shirt made with 100% cotton.",
 			"featured": true
 		},
 		{
 			"id": 4,
 			"title": "Java 2023 Hoodie",
-			"slug": "java-2023-hoodie",
+			"slug": "moletom-java-2023",
 			"price": 99,
-			"image": "/java-2023-hoodie.png",
+			"image": "/moletom-java.png",
 			"description": "Hoodie made with 88% cotton and 12% polyester.",
 			"featured": false
 		},
 		{
 			"id": 5,
 			"title": "AI for Devs Hoodie",
-			"slug": "ai-for-devs-hoodie",
+			"slug": "moletom-ia-p-devs",
 			"price": 99,
-			"image": "/ai-for-devs-hoodie.png",
+			"image": "/moletom-ia-p-devs.png",
 			"description": "Hoodie made with 88% cotton and 12% polyester.",
 			"featured": false
 		}
