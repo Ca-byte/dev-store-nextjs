@@ -9,16 +9,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Node.js
+      - name: Install Node.js and NPM
         uses: actions/setup-node@v2
         with:
           node-version: 18
-
-      - name: Install NPM
-        uses: npm/action-setup@v2
-        with:
-          version: 8
-          run_install: false
 
       - name: Get npm store directory
         shell: bash
@@ -28,7 +22,7 @@ jobs:
       - uses: actions/cache@v2
         name: Setup npm cache
         with:
-          path: path/to/directory-containing-lock-file # Update this path
+          path: /home/carolinux/personal/rocketseat/ignite/reactjs/devstore 
           key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-npm-
