@@ -15,9 +15,7 @@ jobs:
           node-version: 16
 
       - name: Get npm store directory
-        run: |
-          STORE_PATH=$(npm store path --silent)
-          echo "STORE_PATH=$STORE_PATH" >> $GITHUB_ENV
+        run: echo "STORE_PATH=$(npm store path --silent)" >> $GITHUB_ENV
         
       - uses: actions/cache@v2
         name: Setup npm cache
