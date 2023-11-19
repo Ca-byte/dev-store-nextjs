@@ -3,7 +3,7 @@ describe('add product to cart', () => {
     cy.visit('/')
   })
   it('should be able to search for products', () => {
-    cy.get('input[name=q]').type('hoodie').parent('form').submit()
+    cy.searchByQuery('hoodie')
 
     cy.location('pathname').should('include', '/search')
     cy.location('search').should('include', 'q=hoodie')
