@@ -25,13 +25,14 @@ jobs:
         run: |
           echo "STORE_PATH=$(npm store path --silent)" >> $GITHUB_ENV
   
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         name: Setup npm cache
         with:
-          node-version: 18
-          cache: 'npm'
-          cache-dependency-path: subdir/package-lock.json
-
+          path: path/to/directory-containing-lock-file # Update this path
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+        
       - name: Cypress run
         uses: cypress-io/github-action@v6
         env: 
