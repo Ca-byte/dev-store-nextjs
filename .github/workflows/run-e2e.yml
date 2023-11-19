@@ -12,7 +12,7 @@ jobs:
       - name: Install Node.js and NPM
         uses: actions/setup-node@v2
         with:
-          node-version: 18
+          node-version: 16
 
       - name: Get npm store directory
         shell: bash
@@ -29,9 +29,9 @@ jobs:
         
       - name: Cypress run
         uses: cypress-io/github-action@v6
-        env: 
-          APP_URL: "http://localhost:3000"
-          NEXT_PUBLIC_API_BASE_URL: "https://ignite-devstore-api-two.vercel.app"
         with:
           build: npm run build
           start: npm start
+        env: 
+          APP_URL: "http://localhost:3000"
+          NEXT_PUBLIC_API_BASE_URL: "https://ignite-devstore-api-two.vercel.app"
