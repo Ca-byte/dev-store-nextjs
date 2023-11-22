@@ -46,6 +46,11 @@ Implementing a shopping cart functionality using React's context, creating a con
 **Testing and Deployment with Cypress and GitHub Actions:**
 Introduction to end-to-end testing using Cypress, focusing on simulating typical e-commerce flows. Utilizing Cypress for testing UI, actions, and ensuring consistent application behavior. Setting up GitHub Actions workflows to automate testing on commits, including deployment strategies for APIs using Vercel platform.
 
+**Enhancing Application Readiness: Managing Environment Variables in Next.js**
+
+This segment focuses on enhancing our application for production readiness, diving into environment variable management and the distinction between server-side and client-side variables.
+
+In the Next.js framework, variables aimed for client-side access demand the NEXT_PUBLIC prefix, while those confined to the server side operate without this prefix. To simplify this differentiation, we'll implement the 't3-env' package—a nimble solution leveraging Zod to robustly validate environment variables.
 
 
 This is a project developed during React bootcamp **[Ignite](https://github.com/Rocketseat)**, run by **[@Rocketseat](https://github.com/Rocketseat)**.
